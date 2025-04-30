@@ -14,7 +14,7 @@
 .header,
 .card {
   background-color: var(--bg-color);
-  border: 2px solid #000;
+  border: 2px solid var(--clr);
   margin-block-start: 100px;
 }
 
@@ -65,6 +65,7 @@
   padding-block-start: 20px;
 }
 
+
 .card__title {
   --fnt-sz: 18px;
 
@@ -78,11 +79,35 @@
   block-size: auto;
 }
 
-.card__text {
+.card__content {
   padding: 25px;
+}
+
+.card__text {
   display: flex;
   flex-direction: column;
   gap: 27px;
+  padding-block-end: 27px;
+}
+
+/* кнопка */
+.card__button {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.button__text {
+  --fnt-sz: 14px;
+
+  font-family: var(--accent-text);
+  font-size: var(--fnt-sz);
+  border: 2px solid var(--clr);
+}
+
+.card__like-button {
+  padding: 9px 35px;
 }
 
 @media (width <= 375px) {
@@ -94,7 +119,7 @@
     block-size: 327px;
   }
 
-  .card__text {
-    padding: 17px 25px;
+  .card__content {
+    padding: 17px 25px 25px;
   }
 }
