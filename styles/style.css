@@ -90,12 +90,12 @@
   padding-block-end: 27px;
 }
 
-/* кнопка */
+/* кнопка Like */
 .card__button {
   display: flex;
   margin-left: auto;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
 }
 
 .button__text {
@@ -104,10 +104,28 @@
   font-family: var(--accent-text);
   font-size: var(--fnt-sz);
   border: 2px solid var(--clr);
+  background-color: var(--bg-color);
 }
 
 .card__like-button {
   padding: 9px 35px;
+}
+
+/* кнопка "Сохранить на память" */
+.diskette__icon {
+  display: none;
+}
+
+.memory {
+  display: flex;
+  margin: 50px auto 103px ;
+}
+
+.memory__button {
+  padding: 15px 19px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
 }
 
 @media (width <= 375px) {
@@ -119,7 +137,13 @@
     block-size: 327px;
   }
 
-  .card__content {
-    padding: 17px 25px 25px;
+/* кнопка "Сохранить на память" */
+  .memory__icon {
+    inline-size: 28px;
+    block-size: auto;
+  }
+
+  .memory__button {
+    flex-direction: column;
   }
 }
