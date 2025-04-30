@@ -5,4 +5,8 @@
   --max-wght: 700;
   --main-text: 'Inter-Variable';
   --accent-text: 'PressStart2P-Regular';
+  --fnt-sz: 18px;
+  --clr: #000;
+
+  --width-page: clamp(379px, 80%, 700px);
 }
