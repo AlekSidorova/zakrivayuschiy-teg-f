@@ -7,6 +7,9 @@
   --accent-text: 'PressStart2P-Regular';
   --fnt-sz: 18px;
   --clr: #000;
+  --bg-color: #fff;
+  --image-bg: url(../images/background.svg);
 
   --width-page: clamp(379px, 80%, 700px);
+  --width-img: clamp(379px, 100%, 700px);
 }
