@@ -115,6 +115,37 @@
   padding: 9px 35px;
 }
 
+/* label */
+.card__wrapper {
+  position: relative;
+}
+
+.card__wrapper__label {
+  --fnt-sz: 14px;
+
+  font-size: var(--fnt-sz);
+  font-family: var(--accent-text);
+  position: absolute;
+  top: 27px;
+  right: 25px;
+  color: var(--clr);
+  mix-blend-mode: hard-light;
+  opacity: 0.5; 
+  text-shadow: 1px var(--lnl-shdw);
+}
+
+@supports((text-stroke: 1px var(--lnl-shdw)) or (-webkit-text-stroke: 1px var(--lnl-shdw))) {
+  .card__wrapper__label {
+    -webkit-text-stroke: 1px var(--lnl-shdw);
+    text-stroke: 1px var(--lnl-shdw);
+    text-shadow: none;
+  }
+}
+
+.card__wrapper__label_uppercase {
+  text-transform: uppercase;
+}
+
 /* кнопка "Сохранить на память" */
 .diskette__icon {
   display: none;
@@ -143,6 +174,10 @@
 
   .card__title {
     padding-block-start: 5px;
+  }
+
+  .card__wrapper__label {
+    right: 11px;
   }
 
 /* кнопка "Сохранить на память" */
