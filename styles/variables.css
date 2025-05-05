@@ -8,9 +8,32 @@
   --fnt-sz: 18px;
   --clr: #000;
   --bg-color: #fff;
-  --image-bg: url(../images/background.svg);
 
   --width-page: clamp(375px, 80%, 700px);
   --width-img: clamp(372px, 100%, 700px);
   --lnl-shdw: #fff;
+
+  --image-bg: 
+      /* первый градиент */
+      repeating-linear-gradient(
+        to right, 
+        #d3d3d3 0, 
+        #d3d3d3 2px, 
+        transparent 2px, 
+        transparent 4px
+      ),
+      /* второй градиент */
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      /* третий градиент */
+      linear-gradient(
+        to bottom,
+        rgba(231, 231, 231, 1) 0.01%, 
+        rgba(26, 26, 26, 1) 100%
+      );
 }
