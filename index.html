@@ -372,7 +372,7 @@
       type="button"
       name="Diskette" 
       class="memory"
-      onclick="window['dialog-id'].show()"
+      onclick="window['dialog-id'].showModal()"
       aria-controls="dialog-id">
 
       <span class="memory__button button__text">
@@ -395,7 +395,7 @@
      class="memory__dialog">
      <div class="memory__dialog__content">
 
-     <div class="memory__dialog__content-">
+     <div class="memory__dialog__content-text">
       <svg 
         class="memory__dialog__icon"
         width="21" 
@@ -404,12 +404,13 @@
         fill="currentColor">
         <use xlink:href="#icon-diskette"></use>
       </svg> 
-      <span class="">Вставьте дискету, чтобы продолжить</span>
+      <span class="memory__dialog__text">Вставьте дискету, чтобы продолжить</span>
      </div>
      
      <button
         type="button"
         onclick="window['dialog-id'].close()"
+        class="memory__dialog__button button__text "
      >
      Ок
     </button>

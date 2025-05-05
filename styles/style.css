@@ -160,12 +160,29 @@
 
 /* всплывающее окно */
 .memory__dialog {
-  inline-size: var(--width-dialog);
+  inline-size: 353px;
   border: 2px solid var(--clr);
 }
 
 .memory__dialog__content {
-  padding: 30px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.memory__dialog__content-text {
+  display: flex;
+  gap: 20px;
+}
+
+.memory__dialog__text {
+  --fnt-sz: 14px;
+
+  font-family: var(--accent-text);
+  font-size: var(--fnt-sz);
+  line-height: 150%;
+  text-transform: uppercase;
 }
 
 .memory__dialog::backdrop {
@@ -174,8 +191,13 @@
 }
 
 .memory__dialog__icon {
-  inline-size: 39px;
+  inline-size: 80px;
   block-size: auto;
+}
+
+.memory__dialog__button {
+  padding: 9px 17px;
+  text-transform: uppercase;
 }
 
 @media (width <= 375px) {
@@ -203,5 +225,14 @@
 
   .memory__button {
     flex-direction: column;
+  }
+
+  .memory__dialog__content {
+    padding: 32px 37px;
+  }
+
+  .memory__dialog__icon {
+    inline-size: 94px;
+    block-size: auto;
   }
 }
