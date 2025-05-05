@@ -13,4 +13,6 @@
   --width-page: clamp(375px, 80%, 700px);
   --width-img: clamp(372px, 100%, 700px);
   --lnl-shdw: #fff;
+
+  --width-dialog: clamp(341px, 100%, 353px);
 }

@@ -367,9 +367,16 @@
     </div>
     </article>
 
-<!-- кнопка "Сохранить на память" -->
-    <button name="Diskette" class="memory">
+<!-- кнопка "Сохранить на память" ВЕРНУТЬ ОБРАТНО showModal() -->
+    <button 
+      type="button"
+      name="Diskette" 
+      class="memory"
+      onclick="window['dialog-id'].show()"
+      aria-controls="dialog-id">
+
       <span class="memory__button button__text">
+
       <svg 
         class="memory__icon"
         width="21" 
@@ -378,8 +385,38 @@
         fill="currentColor">
         <use xlink:href="#icon-diskette"></use>
       </svg>
+
       Сохранить на память</span>
+
     </button>
+
+    <dialog 
+     id="dialog-id"
+     class="memory__dialog">
+     <div class="memory__dialog__content">
+
+     <div class="memory__dialog__content-">
+      <svg 
+        class="memory__dialog__icon"
+        width="21" 
+        height="21"
+        aria-hidden="true"
+        fill="currentColor">
+        <use xlink:href="#icon-diskette"></use>
+      </svg> 
+      <span class="">Вставьте дискету, чтобы продолжить</span>
+     </div>
+     
+     <button
+        type="button"
+        onclick="window['dialog-id'].close()"
+     >
+     Ок
+    </button>
+    </div>
+
+    </dialog>
+
     </main>
     <script src="./scripts/like.js"></script>
   </body>

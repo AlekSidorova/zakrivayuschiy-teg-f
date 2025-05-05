@@ -28,11 +28,6 @@
   min-inline-size: 375px;
   max-inline-size: 1440px;
   background-color: var(--bg-color);
-  background-image: var(--image-bg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 @supports (font-variation-settings: normal) {
@@ -161,6 +156,26 @@
   display: flex;
   align-items: center;
   gap: 9px;
+}
+
+/* всплывающее окно */
+.memory__dialog {
+  inline-size: var(--width-dialog);
+  border: 2px solid var(--clr);
+}
+
+.memory__dialog__content {
+  padding: 30px;
+}
+
+.memory__dialog::backdrop {
+  background: var(--clr);
+  opacity: 0.75;
+}
+
+.memory__dialog__icon {
+  inline-size: 39px;
+  block-size: auto;
 }
 
 @media (width <= 375px) {
