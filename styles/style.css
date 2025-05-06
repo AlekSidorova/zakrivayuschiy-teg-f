@@ -94,7 +94,7 @@
 
 .card__img__filter-invert {
   --clr: #ffffff;
-  
+
   filter: invert(100%);
   outline: 2px solid var(--clr);
 }
@@ -118,6 +118,7 @@
 .card__img__filter-sepia {
   filter: sepia(0.9);
 }
+
 
 .card__content {
   padding: 25px;
@@ -248,6 +249,25 @@
   padding: 9px 17px;
   text-transform: uppercase;
 }
+
+.card__button:focus-visible {
+  outline: none;
+}
+
+.card__button:focus,
+.button__text:focus,
+.memory:focus {
+  outline: none; 
+}
+
+.button__text:focus-visible,
+.memory:focus-visible {
+  box-shadow: 2px 2px 0 var(--clr);
+  transition: box-shadow 0.3s ease;
+}
+
+
+
 
 @media (width <= 375px) {
   .page {
