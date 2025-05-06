@@ -146,6 +146,30 @@
   font-size: var(--fnt-sz);
   border: 2px solid var(--clr);
   background-color: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: var(--clr-white);
+
+}
+
+.button__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  background-color: var(--bg-color); 
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  z-index: -1;
+  mix-blend-mode: difference;
+}
+
+.button__text:hover::before {
+  transform: scaleX(1);
 }
 
 .card__like-button {
@@ -265,8 +289,6 @@
   box-shadow: 2px 2px 0 var(--clr);
   transition: box-shadow 0.3s ease;
 }
-
-
 
 
 @media (width <= 375px) {
