@@ -147,10 +147,14 @@
   border: 2px solid var(--clr);
   background-color: var(--bg-color);
   position: relative;
-  overflow: hidden;
+  z-index: 1;
+}
+
+.button__text-name,
+.memory__icon {
   z-index: 1;
   color: var(--clr-white);
-
+  mix-blend-mode: difference;
 }
 
 .button__text::before {
