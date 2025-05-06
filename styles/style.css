@@ -78,8 +78,42 @@
 }
 
 .card__img {
+  outline: 2px solid var(--clr);
   inline-size: var(--width-img);
   block-size: auto;
+}
+
+/* фильтры на фото */
+.card__img__filter {
+  filter: saturate(390%) hue-rotate(0.5turn) brightness(70%);
+}
+
+.card__img__filter-grayscale {
+  filter: grayscale(90%);
+}
+
+.card__img__filter-invert {
+  filter: invert(100%);
+}
+
+.card__img__filter-saturate {
+  filter: saturate(390%);
+}
+
+.card__img__filter-brightness {
+  filter: brightness(60%);
+}
+
+.card__img__filter-contrast {
+  filter: contrast(150%);
+}
+
+.card__img__filter-hue {
+  filter: hue-rotate(0.75turn);
+}
+
+.card__img__filter-sepia {
+  filter: sepia(0.9);
 }
 
 .card__content {
