@@ -93,7 +93,10 @@
 }
 
 .card__img__filter-invert {
+  --clr: #ffffff;
+  
   filter: invert(100%);
+  outline: 2px solid var(--clr);
 }
 
 .card__img__filter-saturate {
