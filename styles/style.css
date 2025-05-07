@@ -36,7 +36,6 @@
 @supports (font-variation-settings: normal) {
   body {
     font-family: var(--main-text), sans-serif;
-    
   }
 }
 
