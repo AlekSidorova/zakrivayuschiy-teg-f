@@ -291,6 +291,7 @@
   transition: box-shadow 0.3s ease;
 }
 
+/* сердечко */
 .like-icon {
   border: 2px solid transparent;
 }
@@ -299,6 +300,9 @@
   border: 2px solid var(--clr);
 }
 
+.sparks {
+  opacity: 0;
+}
 
 @media (width <= 375px) {
   .page {

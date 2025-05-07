@@ -37,4 +37,7 @@
         rgba(231, 231, 231, 1) 0.01%, 
         rgba(26, 26, 26, 1) 100%
       );
+
+  --contour-color: #000;
+  --animation-fill-color: #FF0000;
 }
