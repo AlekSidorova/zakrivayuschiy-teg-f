@@ -36,6 +36,7 @@
 @supports (font-variation-settings: normal) {
   body {
     font-family: var(--main-text), sans-serif;
+    
   }
 }
 
@@ -141,7 +142,6 @@
   position: relative;
   z-index: 1;
   border: 2px solid var(--clr);
-
   font-family: var(--accent-text);
   font-size: var(--fnt-sz);
   background-color: var(--bg-color);
@@ -283,6 +283,11 @@
 .main-button:focus,
 .memory:focus {
   outline: none;
+}
+
+.card__button:focus-visible .main-button {
+  box-shadow: 2px 2px 0 var(--clr);
+  transition: box-shadow 0.3s ease;
 }
 
 .main-button:focus-visible,
