@@ -336,21 +336,60 @@
   fill: var(--animation-fill-color); 
 }
 
-
 .sparks { /* искры вокруг */
   opacity: 0;
 }
 
+@keyframes scaleHeart {
+  0% { 
+    transform: scale(1); }
+  50% { 
+    transform: scale(1.25); }
+  100% { 
+    transform: scale(1); }
+}
 
+  @keyframes sparksFlash {
+    0% { 
+      opacity: 0; }
+    10% { 
+      opacity: 1; }
+    100% { 
+      pacity: 0; }
+  }
 
+  .card__button .like-icon.is-liked {
+    animation: scaleHeart 0.3s ease-in forwards;
+    animation-delay: 0.1s;
+    transform-origin: center;
+    fill: var(--animation-fill-color);
+  }
+  
+  .card__button .like-icon.is-liked .main-body {
+    transition: fill 0.3s ease 0.05s;
+    fill: var(--animation-fill-color);
+  }
 
+  .card__button .like-icon.is-liked .core {
+    transition: fill 0.3s;
+    fill: var(--animation-fill-color);
+  }
 
+  .card__button .like-icon.is-liked .contour {
+    transition: fill 0.06s ease;
+    fill: var(--animation-fill-color);
+  }
 
+  .card__button .like-icon.is-liked .sparks {
+    animation: sparksFlash 0.3s ease-in forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  }
 
-
-
-
-
+  .card__button .like-icon .contour {
+    transition: fill 0.1s linear;
+    fill: var(--contour-color);; 
+  }
 
 @media (width <= 375px) {
   .page {
