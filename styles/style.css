@@ -278,10 +278,7 @@
   text-transform: uppercase;
 }
 
-.card__button:focus-visible {
-  outline: none;
-}
-
+.like-icon:focus,
 .card__button:focus,
 .button__text:focus,
 .memory:focus {
@@ -292,6 +289,14 @@
 .memory:focus-visible {
   box-shadow: 2px 2px 0 var(--clr);
   transition: box-shadow 0.3s ease;
+}
+
+.like-icon {
+  border: 2px solid transparent;
+}
+
+.like-icon:focus-visible {
+  border: 2px solid var(--clr);
 }
 
 
