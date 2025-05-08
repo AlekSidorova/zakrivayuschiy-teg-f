@@ -135,6 +135,8 @@
   gap: 6px;
   margin-left: auto;
   justify-content: flex-end;
+
+  transition: box-shadow 0.3s ease;
 }
 
 .card__button-icon {
@@ -282,14 +284,18 @@
   text-transform: uppercase;
 }
 
+.button {
+  transition: box-shadow 0.3s ease;
+}
+
 .like-icon:focus,
-button:focus {
+.button:focus {
   outline: none;
 }
 
-.card__button:focus-visible .main-button {
+.card__button:focus-visible .button {
   box-shadow: 2px 2px 0 var(--clr);
-  transition: box-shadow 0.3s ease;
+  
 }
 
 .main-button:focus-visible,
@@ -297,6 +303,8 @@ button:focus {
   box-shadow: 2px 2px 0 var(--clr);
   transition: box-shadow 0.3s ease;
 }
+
+
 
 /* сердечко */
 .like-icon {
@@ -342,30 +350,6 @@ button:focus {
 .sparks {
   /* искры вокруг */
   opacity: 0;
-}
-
-@keyframes scaleHeart {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes sparksFlash {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    pacity: 0;
-  }
 }
 
 .card__button .like-icon.is-liked {
