@@ -45,7 +45,7 @@
   justify-content: center;
   align-items: center;
   margin: 100px 0;
-  font-family: var(--accent-text);
+  font-family: var(--accent-text), fantasy;
   text-transform: uppercase;
   padding: 128px 0; 
 }
@@ -147,12 +147,11 @@
   position: relative;
   z-index: 1;
   border: 2px solid var(--clr);
-  font-family: var(--accent-text);
+  font-family: var(--accent-text), fantasy;
   font-size: var(--fnt-sz);
   background-color: var(--bg-color);
   transition: box-shadow 0.3s ease;
 }
-
 
 .button__text-name,
 .memory__icon {
@@ -198,7 +197,7 @@
   right: 25px;
   opacity: 0.5;
   color: var(--clr);
-  font-family: var(--accent-text);
+  font-family: var(--accent-text), fantasy;
   font-size: var(--fnt-sz);
   text-shadow: 1px var(--lnl-shdw);
   mix-blend-mode: hard-light;
@@ -266,7 +265,7 @@
 .memory__dialog__text {
   --fnt-sz: 14px;
 
-  font-family: var(--accent-text);
+  font-family: var(--accent-text), fantasy;
   font-size: var(--fnt-sz);
   line-height: 150%;
   text-transform: uppercase;
@@ -292,6 +291,10 @@
   outline: none;
 }
 
+.card__button-icon:focus-visible .like-icon {
+  border: 2px solid var(--clr);
+}
+
 .button:focus-visible,
 .memory:focus-visible {
   box-shadow: 2px 2px 0 var(--clr);
@@ -300,10 +303,7 @@
 /* сердечко */
 .like-icon {
   border: 2px solid transparent;
-}
-
-.like-icon:focus-visible {
-  border: 2px solid var(--clr);
+  transition: border 0.3s ease;
 }
 
 .core { /* сердцевина */
