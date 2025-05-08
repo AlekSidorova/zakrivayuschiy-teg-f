@@ -9,7 +9,7 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
-*/ 
+*/
 
 .header,
 .card {
@@ -47,7 +47,7 @@
   margin: 100px 0;
   font-family: var(--accent-text), fantasy;
   text-transform: uppercase;
-  padding: 128px 0; 
+  padding: 128px 0;
 }
 
 .header__title {
@@ -307,12 +307,14 @@
   transition: border 0.3s ease;
 }
 
-.core { /* сердцевина */
+.core {
+  /* сердцевина */
   fill: transparent;
   transition: fill 0.3s ease 0.03s;
 }
 
-.main-body { /* основное тело сердца */
+.main-body {
+  /* основное тело сердца */
   fill: transparent;
   transition: fill 0.3s ease 0s;
 }
@@ -337,7 +339,8 @@
   transition: fill 0.3s ease 0.05s;
 }
 
-.sparks { /* искры вокруг */
+.sparks {
+  /* искры вокруг */
   opacity: 0;
 }
 
