@@ -9,7 +9,7 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
-*/
+*/ 
 
 .header,
 .card {
@@ -58,8 +58,8 @@
 
 .header__subtitle {
   --fnt-sz: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
-  padding-block-start: 20px;
 
+  padding-block-start: 20px;
   font-size: var(--fnt-sz);
 }
 
@@ -69,8 +69,8 @@
 
 .card__title {
   --fnt-sz: 18px;
-  padding: 6px 10px 4px;
 
+  padding: 6px 10px 4px;
   font-size: var(--fnt-sz);
   font-variation-settings: "wght" var(--max-wght);
 }
@@ -92,8 +92,8 @@
 
 .card__img__filter-invert {
   --clr: #ffffff;
-  outline: 2px solid var(--clr);
 
+  outline: 2px solid var(--clr);
   filter: invert(100%);
 }
 
@@ -135,23 +135,24 @@
   gap: 6px;
   margin-left: auto;
   justify-content: flex-end;
-
-  transition: box-shadow 0.3s ease;
 }
 
 .card__button-icon {
   display: flex;
 }
 
-.main-button {
+.button {
   --fnt-sz: 14px;
+
   position: relative;
   z-index: 1;
   border: 2px solid var(--clr);
   font-family: var(--accent-text);
   font-size: var(--fnt-sz);
   background-color: var(--bg-color);
+  transition: box-shadow 0.3s ease;
 }
+
 
 .button__text-name,
 .memory__icon {
@@ -160,7 +161,7 @@
   mix-blend-mode: difference;
 }
 
-.main-button::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -175,12 +176,13 @@
   mix-blend-mode: difference;
 }
 
-.main-button:hover::before {
+.button:hover::before {
   transform: scaleX(1);
 }
 
 .card__like-button {
-  padding: 9px 35px;
+  padding: 9px 17px;
+  inline-size: 130px;
 }
 
 /* label */
@@ -190,13 +192,13 @@
 
 .card__wrapper__label {
   --fnt-sz: 14px;
+
   position: absolute;
   top: 27px;
   right: 25px;
   opacity: 0.5;
   color: var(--clr);
   font-family: var(--accent-text);
-
   font-size: var(--fnt-sz);
   text-shadow: 1px var(--lnl-shdw);
   mix-blend-mode: hard-light;
@@ -225,6 +227,7 @@
 .memory {
   display: flex;
   margin: 50px auto 103px;
+  transition: box-shadow 0.3s ease;
 }
 
 .memory__button {
@@ -284,27 +287,15 @@
   text-transform: uppercase;
 }
 
-.button {
-  transition: box-shadow 0.3s ease;
-}
-
 .like-icon:focus,
 .button:focus {
   outline: none;
 }
 
-.card__button:focus-visible .button {
-  box-shadow: 2px 2px 0 var(--clr);
-  
-}
-
-.main-button:focus-visible,
+.button:focus-visible,
 .memory:focus-visible {
   box-shadow: 2px 2px 0 var(--clr);
-  transition: box-shadow 0.3s ease;
 }
-
-
 
 /* сердечко */
 .like-icon {
@@ -315,14 +306,12 @@
   border: 2px solid var(--clr);
 }
 
-.core {
-  /* сердцевина */
+.core { /* сердцевина */
   fill: transparent;
   transition: fill 0.3s ease 0.03s;
 }
 
-.main-body {
-  /* основное тело сердца */
+.main-body { /* основное тело сердца */
   fill: transparent;
   transition: fill 0.3s ease 0s;
 }
@@ -347,8 +336,7 @@
   transition: fill 0.3s ease 0.05s;
 }
 
-.sparks {
-  /* искры вокруг */
+.sparks { /* искры вокруг */
   opacity: 0;
 }
 
