@@ -126,6 +126,7 @@
   flex-direction: column;
   gap: 27px;
   padding-block-end: 27px;
+  line-height: 21px;
 }
 
 /* кнопка Like */
