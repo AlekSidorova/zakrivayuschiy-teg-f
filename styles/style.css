@@ -363,7 +363,7 @@
 
 .card__button .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
-  transition: fill 0.06s ease;
+  transition: fill 0.3s ease 0.06s;
 }
 
 .card__button .like-icon.is-liked .sparks {
